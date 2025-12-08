@@ -1,5 +1,7 @@
 import os
 
 def ensure_dirs():
-    os.makedirs("data/docs", exist_ok=True)
-    os.makedirs("data/faiss_index", exist_ok=True)
+    os.makedirs("data/docs_translator", exist_ok=True)
+    os.makedirs("data/docs_compliance", exist_ok=True)
+    os.makedirs("data/faiss_translator", exist_ok=True)
+    os.makedirs("data/faiss_compliance", exist_ok=True)
