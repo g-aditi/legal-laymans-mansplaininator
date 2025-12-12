@@ -108,9 +108,12 @@ def _chat_ui(mode: str):
                         st.markdown(f"**Chunk {i+1}:** {snippet}...")
 
     user_input = st.chat_input("Ask a question")
+    short_answer_mode = st.toggle("Short Answer Mode")
     if user_input:
         st.session_state[chat_key].append({"role": "user", "content": user_input, "sources": None})
         with st.chat_message("user"):
+            if short_answer_mode:
+                user_input = "For the following question, KEEP IT SHORT, DO NOT GIVE ME MORE THAN TWO SENTENCES: " + user_input
             st.write(user_input)
 
         with st.chat_message("assistant"):
