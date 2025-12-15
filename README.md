@@ -125,4 +125,3 @@ Indices are automatically created when the `Index Documents` button is clicked o
 * Aditi Ganapathi
 
 We made this project for our Digital Forensics class in Fall 2025. Shout out to Dr. Ahn and the entire class for all the awesome feedback!
-
